@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  recordid: 
+  id: 
+  productid: 
+  count: 
+  datecreated: 2010-12-06 20:28:44
+
+two:
+  recordid: 
+  id: 
+  productid: 
+  count: 
+  datecreated: 2010-12-06 20:28:44

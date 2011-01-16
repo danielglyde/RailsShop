@@ -1,0 +1,9 @@
+<div id="products">
+  <strong>Products</strong>
+
+  <% products.each do |product| %>
+    <div>
+      <%= link_to product.name, product%>
+    </div>
+  <% end %>
+</div>

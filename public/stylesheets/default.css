@@ -1,0 +1,86 @@
+/* 
+    Document   : default
+    Created on : 15-Jan-2011, 21:43:47
+    Author     : Dan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body
+{
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 78.25%;
+}
+
+#containerbody
+{
+    margin-left: 80px;
+    width: 920px;
+    margin-left: auto ;
+    margin-right: auto ;
+	clear:both; /*otherwise the featured websites h2 creeps up*/
+}
+
+#categories
+{
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+#products
+{
+    float: left;
+    position: relative;
+    width: 40%;
+}
+
+#basket
+{
+    float: left;
+    position: relative;
+    width: 30%;
+}
+
+.delete
+{
+    color: #BE0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.qty
+{
+    text-align: center;
+}
+
+.totalprice
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.productname
+{
+    font-weight: bold;
+}
+
+.updatebutton
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 84%;
+}
+
+table
+{
+     font-size: 100%;
+}

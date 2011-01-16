@@ -1,0 +1,7 @@
+<p>
+<h3><%=h @category.name %></h3>
+</p>
+
+<%= render :partial=>"category_list", :locals=>{:categories=>Category.find(:all)} %>
+<%= render :partial=>"product_list", :locals=>{:products=>@category.products} %>
+<%= render :partial=>"basket_list", :locals=>{:baskets=>Basket.find(:all)} %>

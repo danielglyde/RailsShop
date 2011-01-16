@@ -1,0 +1,515 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (312.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (360.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `datecreated` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (62.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (63.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (313.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (218.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (79.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `datecreated` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (46.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (62.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (93.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+Migrating to CreateProducts (20101206203817)
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+Migrating to CreateProducts (20101206203817)
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (46.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (78.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (93.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (141.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (218.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (171.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (94.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (63.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (156.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (93.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (141.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (93.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (93.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (110.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (281.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (188.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+20-Dec-2010 20:48:39 com.sun.enterprise.v3.server.AppServerStartup run
+INFO: GlassFish v3 (74b) startup time : Embedded(2828ms) startup services(406ms) total(3234ms)
+20-Dec-2010 20:48:40 AppServerStartup run
+INFO: [Thread[GlassFish Kernel Main Thread,5,main]] started
+20-Dec-2010 20:48:40 org.hibernate.validator.util.Version <clinit>
+INFO: Hibernate Validator null
+20-Dec-2010 20:48:41 com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.18-k started in: 282ms listening on port 8081
+20-Dec-2010 20:48:41 org.glassfish.kernel.config.DefaultConfigParser$2 run
+INFO: interface org.glassfish.scripting.jruby.config.JrubyContainer
+20-Dec-2010 20:48:41 org.glassfish.scripting.jruby.JRubyConfigImpl <init>
+INFO: Running RailsShop in development environment.
+20-Dec-2010 20:48:41 org.glassfish.scripting.jruby.RackApplicationChooser detectRails
+INFO: Rails application detected.
+20-Dec-2010 20:48:41 org.glassfish.scripting.jruby.JRubyApplication <init>
+INFO: Loading application RailsShop at /
+20-Dec-2010 20:48:41 com.sun.grizzly.jruby.RackGrizzlyAdapter <init>
+INFO: JRuby version is: 1.4.0
+20-Dec-2010 20:48:46 com.sun.grizzly.jruby.rack.RackApplicationPoolFactory newApplication
+INFO: New instance of rails created in 5,062 milliseconds
+20-Dec-2010 20:48:46 com.sun.grizzly.scripting.pool.DynamicPool logDynamicStatus
+INFO: Pool started without dynamic resizing enabled. Pool will not attempt to determine the upper and lower bounds that it should be using, and will stay at 1
+20-Dec-2010 20:51:17 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+20-Dec-2010 20:51:18 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-20 20:51:18) [GET]
+
+20-Dec-2010 20:51:18 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+ActionController::RoutingError (No route matches "/RailsShop/product/show_by_category/1" with {:method=>:get}):
+  :1
+
+
+20-Dec-2010 20:51:18 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: Rendering rescues/layout (not_found)
+
+20-Dec-2010 20:51:41 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+20-Dec-2010 20:51:41 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-20 20:51:41) [GET]
+
+20-Dec-2010 20:51:41 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+ActionController::RoutingError (No route matches "/RailsShop/product/show_by_category/1" with {:method=>:get}):
+  :1
+
+
+20-Dec-2010 20:51:41 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: Rendering rescues/layout (not_found)
+
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (516.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (172.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (265.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (203.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `recordid` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (531.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (438.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (266.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (31.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (344.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `sessionKey` varchar(255), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (62.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (78.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (172.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (78.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (141.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` decimal, `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+11-Jan-2011 20:09:10 com.sun.enterprise.v3.server.AppServerStartup run
+INFO: GlassFish v3 (74b) startup time : Embedded(3172ms) startup services(578ms) total(3750ms)
+11-Jan-2011 20:09:10 AppServerStartup run
+INFO: [Thread[GlassFish Kernel Main Thread,5,main]] started
+11-Jan-2011 20:09:10 org.hibernate.validator.util.Version <clinit>
+INFO: Hibernate Validator null
+11-Jan-2011 20:09:12 com.sun.enterprise.v3.services.impl.GrizzlyProxy$2$1 onReady
+INFO: Grizzly Framework 1.9.18-k started in: 266ms listening on port 8081
+11-Jan-2011 20:09:12 org.glassfish.kernel.config.DefaultConfigParser$2 run
+INFO: interface org.glassfish.scripting.jruby.config.JrubyContainer
+11-Jan-2011 20:09:12 org.glassfish.scripting.jruby.JRubyConfigImpl <init>
+INFO: Running RailsShop in development environment.
+11-Jan-2011 20:09:12 org.glassfish.scripting.jruby.RackApplicationChooser detectRails
+INFO: Rails application detected.
+11-Jan-2011 20:09:12 org.glassfish.scripting.jruby.JRubyApplication <init>
+INFO: Loading application RailsShop at /
+11-Jan-2011 20:09:12 com.sun.grizzly.jruby.RackGrizzlyAdapter <init>
+INFO: JRuby version is: 1.4.0
+11-Jan-2011 20:09:17 com.sun.grizzly.jruby.rack.RackApplicationPoolFactory newApplication
+INFO: New instance of rails created in 5,391 milliseconds
+11-Jan-2011 20:09:17 com.sun.grizzly.scripting.pool.DynamicPool logDynamicStatus
+INFO: Pool started without dynamic resizing enabled. Pool will not attempt to determine the upper and lower bounds that it should be using, and will stay at 1
+11-Jan-2011 20:11:58 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO:   [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+11-Jan-2011 20:11:58 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 20:11:58) [GET]
+
+11-Jan-2011 20:11:58 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+ActionController::RoutingError (No route matches "/RailsShop/basket" with {:method=>:get}):
+  :1
+
+
+11-Jan-2011 20:11:58 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: Rendering rescues/layout (not_found)
+
+11-Jan-2011 20:12:22 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO:   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+11-Jan-2011 20:12:22 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 20:12:22) [GET]
+
+11-Jan-2011 20:12:22 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+ActionController::RoutingError (No route matches "/RailsShop/category/" with {:method=>:get}):
+  :1
+
+
+11-Jan-2011 20:12:22 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: Rendering rescues/layout (not_found)
+
+11-Jan-2011 20:13:28 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO:   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+11-Jan-2011 20:13:28 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 20:13:28) [GET]
+
+11-Jan-2011 20:13:28 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+ActionController::RoutingError (No route matches "/RailsShop/category/index" with {:method=>:get}):
+  :1
+
+
+11-Jan-2011 20:13:28 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: Rendering rescues/layout (not_found)
+
+11-Jan-2011 20:13:34 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO:   [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+11-Jan-2011 20:13:34 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-01-11 20:13:34) [GET]
+
+11-Jan-2011 20:13:34 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: 
+ActionController::RoutingError (No route matches "/RailsShop/category/index" with {:method=>:get}):
+  :1
+
+
+11-Jan-2011 20:13:34 sun.reflect.NativeMethodAccessorImpl invoke0
+INFO: Rendering rescues/layout (not_found)
+
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (797.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (250.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (156.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (235.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (157.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (94.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (406.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` integer(10), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;35;1mSQL (47.0ms)[0m   [0mDROP TABLE `baskets`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203835'[0m
+Migrating to CreateProducts (20101206203817)
+  [4;35;1mSQL (94.0ms)[0m   [0mDROP TABLE `products`[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203817'[0m
+Migrating to CreateCategories (20101206203750)
+  [4;35;1mSQL (32.0ms)[0m   [0mDROP TABLE `categories`[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20101206203750'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20101206203750)
+  [4;36;1mSQL (125.0ms)[0m   [0;1mCREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203750')[0m
+Migrating to CreateProducts (20101206203817)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` integer(10), `name` varchar(255), `price` decimal(15,2), `url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203817')[0m
+Migrating to CreateBaskets (20101206203835)
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE `baskets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` integer(10), `count` integer(10), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101206203835')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m

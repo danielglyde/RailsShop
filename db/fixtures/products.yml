@@ -1,0 +1,147 @@
+## YAML Template.
+
+Concorde Bikes PDM Team Replica Road Bike:
+  category_id: 1
+  name: "Concorde Bikes PDM Team Replica Road Bike"
+  price: 699.99
+  url: "concorde-bike-pdm-ind.jpg"
+
+Kestrel Talon Tri 105 2010:
+  category_id: 1
+  name: "Kestrel Talon Tri 105 2010"
+  price: 147.99
+  url: "kestral-talon-tri-ind.jpg"
+
+Felt Brougham 2010:
+  category_id: 1
+  name: "Felt Brougham 2010"
+  price: 299.99
+  url: "felt-brougham-2010-ind.jpg"
+
+Focus Black Forest Pro 2010:
+  category_id: 1
+  name: "Focus Black Forest Pro 2010"
+  price: 899.99
+  url: "focus-blk-for-pro-2010-ind.jpg"
+
+Look Keo 2 Max Carbon Pedals:
+  category_id: 2
+  name: "Look Keo 2 Max Carbon Pedals"
+  price: 1119.99
+  url: "look-keo2max-c-ind.jpg"
+
+Mavic Cosmic Carbone Ultimate Tub Road Wheelset:
+  category_id: 2
+  name: "Mavic Cosmic Carbone Ultimate Tub Road Wheelset"
+  price: 2025.00
+  url: "mavic-107529-ind.jpg"
+
+Shimano Dyna-Sys Deore XT HollowTech II Triple Chainset:
+  category_id: 2
+  name: "Shimano Dyna-Sys Deore XT HollowTech II Triple Chainset"
+  price: 170.99
+  url: "shimano-dyna-xt-cset-ind.jpg"
+
+Continental Grand Prix 4 Season Road Tyre and Tube Set:
+  category_id: 2
+  name: "Continental Grand Prix 4 Season Road Tyre and Tube Set"
+  price: 71.89
+  url: "tyres.jpg"
+
+Rudy Project Exowind Impact X Sunglasses - Photo Lenses:
+  category_id: 3
+  name: "Rudy Project Exowind Impact X Sunglasses - Photo Lenses"
+  price: 105.29
+  url: "rudy-exowind-ind.jpg"
+
+Bell Team Saxo Bank Volt Road Cycling Helmet:
+  category_id: 3
+  name: "Bell Team Saxo Bank Volt Road Cycling Helmet"
+  price: 134.99
+  url: "bell-saxovolt-10-ind.jpg"
+
+Vermarc Milram Team Short Zip Jersey 2010:
+  category_id: 3
+  name: "Vermarc Milram Team Short Zip Jersey 2010"
+  price: 37.50
+  url: "vermarc-milram-jer-10-ind.jpg"
+
+Nalini Liquigas Team Jersey 2010:
+  category_id: 3
+  name: "Nalini Liquigas Team Jersey 2010"
+  price: 35.24
+  url: "nalini-liquigas-jer-2010-ind.jpg"
+
+Asics Ladies Gel Nimbus 12 Shoes:
+  category_id: 4
+  name: "Asics Ladies Gel Nimbus 12 Shoes"
+  price: 94.50
+  url: "asics-T095N-0197-ss10-ind.jpg"
+
+Asics DS Trainer 15 Shoes:
+  category_id: 4
+  name: "Asics DS Trainer 15 Shoes"
+  price: 80.10
+  url: "asics-T014N-0191-ss10-ind.jpg"
+
+Salomon XA Pro 3D Ultra GTX Shoes:
+  category_id: 4
+  name: "Salomon XA Pro 3D Ultra GTX Shoes"
+  price: 99.00
+  url: "salomon-106079-aw10a-ind.jpg"
+
+Mizuno Ladies Wave Alchemy 10 Shoes:
+  category_id: 4
+  name: "Mizuno Ladies Wave Alchemy 10 Shoes"
+  price: 76.50
+  url: "mizuno-08KN067-21-ind.jpg"
+
+For Goodness Shakes Recovery Powder 24x80g:
+  category_id: 5
+  name: "For Goodness Shakes Recovery Powder 24x80g"
+  price: 28.80
+  url: "fgs-powder-10-ind.jpg"
+
+High5 EnergySource 4:1 With Super Carbs 1.6kg Tub:
+  category_id: 5
+  name: "High5 EnergySource 4:1 With Super Carbs 1.6kg Tub"
+  price: 25.19
+  url: "sis-H5962-ind.jpg"
+
+High5 Protein Recovery 1.6kg Tub:
+  category_id: 5
+  name: "High5 Protein Recovery 1.6kg Tub"
+  price: 26.34
+  url: "high5.jpg"
+
+Science in Sport PSP22 High Energy Sports Fuel 1.6kg Tub:
+  category_id: 5
+  name: "Science in Sport PSP22 High Energy Sports Fuel 1.6kg Tub"
+  price: 18.00
+  url: "sis-SIS50014-ind.jpg"
+
+Garmin Edge 500 with Heart Rate, Cadence and Team Jersey:
+  category_id: 6
+  name: "Garmin Edge 500 with Heart Rate, Cadence and Team Jersey"
+  price: 251.99
+  url: "garmin-010-00829-05-ind.jpg"
+
+Giro Prolight Road Helmet:
+  category_id: 6
+  name: "Giro Prolight Road Helmet"
+  price: 134.99
+  url: "giro-prolight-ht-10-ind.jpg"
+
+Fox Flux Helmet:
+  category_id: 6
+  name: "Fox Flux Helmet"
+  price: 70.00
+  url: "fox-flux-helmet-10-ind.jpg"
+
+Fibre Flare Shorty Rear Light:
+  category_id: 6
+  name: "Fibre Flare Shorty Rear Light"
+  price: 26.99
+  url: "fibre-flare-shorty-ind.jpg"
+
+  

@@ -1,0 +1,25 @@
+## YAML Template.
+
+Bikes:
+  id: 1
+  name: "Bikes"
+
+Components:
+  id: 2
+  name: "Components"
+
+Clothing:
+  id: 3
+  name: "Clothing"
+
+Shoes:
+  id: 4
+  name: "Shoes"
+
+Nutrition:
+  id: 5
+  name: "Nutrition"
+
+Accessories:
+  id: 6
+  name: "Accessories"

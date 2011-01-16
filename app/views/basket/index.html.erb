@@ -1,0 +1,29 @@
+<%  @total = 0 %>
+<table>
+  <tr>
+    <th></th>
+    <th>Price</th>
+    <th>Qty</th><th>Line Price</th>
+  </tr>
+
+<% @baskets.each do |basket| %>
+  <% form_for(basket) do |f| %>
+  <tr>
+    <td class ="productname"><%= basket.product.name %></td>
+    <td><%= basket.product.price %></td>
+    <td><%= f.text_field :count, :class => "qty" %></td>
+    <td><%= basket.product.price * basket.count %></td>
+    <td><%= f.hidden_field :id %></td>
+    <td><%= f.submit 'Update', :class => "updatebutton" %></td>
+    <td><%= link_to 'x', {:controller => "basket", :action => "delete", :id => basket.id}, :class => "delete", :confirm => "Are you sure?"%></td>
+  </tr>
+  <%@total += basket.product.price * basket.count%>
+  <% end %>
+<% end %>
+  <tr></tr>
+  <tr>
+    <td></td><td></td><td class="totalprice">Total price</td><td><%= @total %></td>
+  </tr>
+</table>
+<%= link_to 'Continue shopping', :controller => "category", :action => "index"%>
+

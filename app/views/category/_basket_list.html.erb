@@ -1,0 +1,16 @@
+<div id="basket">
+  <strong>Basket</strong>
+  <%  @total = 0 %>
+  <hr/>
+  <% baskets.each do |basket| %>
+    <div>
+      <div><%= basket.product.name%></div>
+      <div><%= basket.product.price %></div>
+      <div>Qty <%= basket.count%></div>
+    </div>
+    <hr/>
+    <%@total += basket.product.price * basket.count%>
+  <% end %>
+  <p>Total price: <%= @total %></p>
+  <%= link_to 'Edit basket', :controller => "basket", :action => "index" %>
+</div>

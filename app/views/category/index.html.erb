@@ -1,0 +1,11 @@
+<%#
+# To change this template, choose Tools | Templates
+# <% render :partial=>"category_list", :locals=>{:categories=>Category.find(:all)}
+%>
+
+<%=  render :partial=>"category_list", :locals=>{:categories=>Category.find(:all)} %>
+<div id="products"></div>
+<%=  render :partial=>"basket_list", :locals=>{:baskets=>Basket.find(:all)} %>
+
+
+

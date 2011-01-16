@@ -1,0 +1,19 @@
+<%= render :partial=>"category/category_list", :locals=>{:categories=>Category.find(:all)} %>
+
+<div id="products">
+  <b><%=h @product.name %></b>
+  <p>
+    <%= image_tag(@product.url) %>
+  </p>
+
+  <p>
+    <b>Price:</b>
+    <%=h @product.price %>
+  </p>
+
+  <%= link_to 'Add to basket', :controller => "basket", :action => "add_to_basket", :id => @product.id%>
+</div>
+
+<%= render :partial=>"category/basket_list", :locals=>{:baskets=>Basket.find(:all)} %>
+
+
